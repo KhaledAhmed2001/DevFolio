@@ -1,0 +1,265 @@
+html,
+body {
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #f5f5f5;
+}
+nav .collapse ul li {
+  position: relative;
+}
+nav .collapse ul li::before{
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transform: translateX(-80%);
+  -webkit-transform: translateX(-80%);
+  -moz-transform: translateX(-80%);
+  -ms-transform: translateX(-80%);
+  -o-transform: translateX(-80%);
+}
+nav .collapse ul li:hover::before{
+  width: 100%;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0%);
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+}
+.hero {
+  background-image: url(./image/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-text {
+  z-index: 2;
+}
+.hero .hero-text h2 {
+  font-size: 60px;
+  text-align: center;
+}
+.hero .hero-text h3 {
+  margin: auto;
+  width: 10ch;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  animation: typing 2.5s steps(10) infinite alternate-reverse;
+  -webkit-animation: typing 2.5s steps(10) infinite alternate-reverse;
+}
+@keyframes typing {
+  from {
+    width: 0ch;
+  }
+  to {
+    width: 10ch;
+  }
+}
+
+.hero .cover {
+  background: #0000003b;
+  z-index: 1;
+  height: 100vh;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 7%;
+  left: 0;
+  background: blue;
+  bottom: -15%;
+}
+.title-effect::after {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 5%;
+  background: blue;
+  bottom: -24%;
+  right: 45%;
+}
+.services .service-info i {
+  background: white !important;
+  color: black !important;
+  border: 15px solid #037aff !important;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.services .service-info:hover i {
+  background: #037aff !important;
+  color: white !important;
+  border: 15px solid #cde1f8 !important ;
+}
+.services .work {
+  background-image: url(./image/counters-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 5rem 0;
+  z-index: -1;
+}
+.cover {
+  width: 100%;
+  content: "";
+  background: #037aff;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+}
+.work .work-info {
+  z-index: 2 !important;
+  color: white !important;
+}
+.work .work-info i {
+  border: 15px solid #cde1f8 !important;
+}
+.portfolio .card img {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  overflow: hidden;
+}
+.portfolio .card:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.portfolio .card .card-body .card-icon i {
+  color: #037aff !important ;
+  border: 2px solid #037aff;
+}
+.portfolio .work {
+  background-image: url(./image/overlay-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  padding: 5rem 0;
+  z-index: -1;
+}
+.carousel-indicators [data-bs-target] {
+  background: white;
+  width: 20px;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.carousel-indicators {
+  bottom: -10%;
+}
+
+.portfolio-carousel {
+  background-image: url(./image/overlay-bg.jpg);
+  padding: 5rem 0;
+  background-position: center center;
+  z-index: 2;
+}
+.blog .card .card-body::after {
+  content: "TRAVEL";
+  font-size: 15px;
+  position: absolute;
+  top: -10%;
+  left: 42%;
+  background: #037aff;
+  color: #fff;
+  padding: 0px 7px;
+  border-radius: 6px;
+}
+.blog .card .card-body::after {
+  content: "WEB DESIGN";
+  font-size: 12px;
+  position: absolute;
+  top: -10%;
+  left: 42%;
+  background: #037aff;
+  color: #fff;
+  padding: 0px 7px;
+  border-radius: 6px;
+}
+.blog .card .card-body.travel::after {
+  content: "TRAVEL";
+  font-size: 12px;
+  position: absolute;
+  top: -10%;
+  left: 42%;
+  background: #037aff;
+  color: #fff;
+  padding: 0px 7px;
+  border-radius: 6px;
+}
+.blog .card .card-body .card-text h5 a {
+  color: #000;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.blog .card .card-body .card-text h5:hover a {
+  color: #037aff;
+}
+
+.contact {
+  background-image: url(./image/overlay-bg.jpg);
+  padding-top: 5rem;
+  background-position: center center;
+  z-index: 2;
+}
+.contact .icon i{
+  border: 5px solid #0062d3;
+  font-size: 18px;
+  padding: 10px ;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.contact .icon i:hover{
+  border: 5px solid #037aff;
+  background: #0062d3;
+  color: white !important;
+}
+footer {
+  background: #0062d3;
+  border-top: 1px solid #0000005c;
+}
